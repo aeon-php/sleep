@@ -57,7 +57,7 @@ jobs:
         run: "composer install --no-interaction --no-progress --no-suggest"
 
       - name: "Install tools"
-        run: "phive install"
+        run: "phive install --force-accept-unsigned"
 
       - name: "Mutation Tests"
         run: "composer test:mutation"
